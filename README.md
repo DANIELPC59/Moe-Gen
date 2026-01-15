@@ -30,6 +30,36 @@ Moe-Gen-Code/
     └── Train_CFModel_NoDef.py # Model training script
 ```
 
+# PluggableTransport - Moegen（Code
+
+```
+├── common/           # Common utility libraries
+│   ├── csrand/       # Cryptographically secure random number generation
+│   ├── drbg/         # Deterministic random bit generator
+│   ├── log/          # Logging system
+│   ├── ntor/         # NTor handshake protocol implementation
+│   ├── probdist/     # Probability distribution implementation
+│   ├── replayfilter/ # Replay attack filter
+│   └── socks5/       # SOCKS5 protocol implementation
+├── git.torproject.org/ # Tor project dependencies
+│   └── pluggable-transports/
+│       └── goptlib/  # Tor pluggable transport library
+├── internal/         # Internal cryptographic libraries
+│   ├── edwards25519/ # Edwards25519 elliptic curve implementation
+│   └── extra25519/   # Additional 25519 elliptic curve functionality
+├── obfs4proxy/       # Main program entry
+│   └── obfs4proxy.go # Program main entry
+├── transports/       # Transport protocol implementations
+│   ├── base/         # Transport protocol base interfaces
+│   ├── moegen/       # Moegen transport protocol implementation
+│   ├── obfs4/        # Obfs4 transport protocol implementation
+│   └── transports.go # Transport protocol registration and management
+├── LICENSE           # License file
+├── LICENSE-GPL3.txt  # GPL3 license file
+├── go.mod            # Go module dependencies
+└── go.sum            # Go module checksums
+
 # DataSet
 The DataSet directory contains a small subset of AWF100, which includes the original burst sequences and their corresponding perturbed sequences generated using the DFD and Walkie-Talkie methods. Due to GitHub's upload limitations, each class in this uploaded subset is restricted to 100 samples.
+
 
