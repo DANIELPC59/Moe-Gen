@@ -19,8 +19,7 @@ Moe-Gen-Code/
 |   |   ├──Evaluate_Gen.py    # Evaluate trained Moe-Gen script
 |   |   ├──Moe_Gen_def.py     # interface provided defence tool method
 |   |   ├──Train_Moe_Gen.py   # train Moe-Gen script
-|   |   ├──Gen_Model          # Moe-Gen util
-|   |   └──Gen_Save           # provided trained Moe-Gen in AWF100
+|   |   └──Gen_Model          # Moe-Gen util
 │   └── WalkieTalkie/      # WalkieTalkie defense model
 ├── OpenWorld/             # Open-world defense evaluation
 │   └── OpenWorld_Compare.py # Open-world defense comparison script
