@@ -58,6 +58,27 @@ Moe-Gen-Code/
 ├── go.mod            # Go module dependencies
 └── go.sum            # Go module checksums
 ```
+
+# P4_Switch
+
+## Project Introduction
+
+This project is a network fingerprint defense system based on P4 programmable switches, primarily focused on burst modeling, which defends against network fingerprint-based attacks by inserting chaff packets.
+
+## Project Structure
+
+```
+P4_Switch/
+├── common/              # Shared components and header files
+│   ├── header.p4        # Basic header definitions
+│   ├── headers_forwarding.p4  # Forwarding-related header definitions
+│   ├── parde.p4         # Parser and deparser definitions
+│   └── util.p4          # Utility functions and constant definitions
+├── normal_forward.p4    # Basic forwarding functionality implementation (with commented chaff logic)
+├── srv6.p4              # SRv6 (Segment Routing over IPv6) support
+└── tna_chaff_forwarding.p4  # Complete chaff insertion logic implementation
+```
+
 # DataSet
 The DataSet directory contains a small subset of AWF100, which includes the original burst sequences and their corresponding perturbed sequences generated using the DFD and Walkie-Talkie methods. Due to GitHub's upload limitations, each class in this uploaded subset is restricted to 100 samples.
 
