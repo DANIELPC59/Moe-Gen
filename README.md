@@ -61,12 +61,7 @@ Moe-Gen-Code/
 
 # P4_Switch
 
-## Project Introduction
-
-This project is a network fingerprint defense system based on P4 programmable switches, primarily focused on burst modeling, which defends against network fingerprint-based attacks by inserting chaff packets.
-
-## Project Structure
-
+A network fingerprint defense system based on P4 programmable switches, primarily focused on burst modeling, which defends against network fingerprint-based attacks by inserting chaff packets.
 ```
 P4_Switch/
 ├── common/              # Shared components and header files
